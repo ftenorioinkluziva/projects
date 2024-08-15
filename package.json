@@ -1,0 +1,25 @@
+{
+  "name": "binance-p2p",
+  "version": "1.0.0",
+  "description": "Binance P2P Data Fetcher",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "binance-api-node": "^0.12.7",
+    "body-parser": "^1.19.0",
+    "chegs-simple-logger": "^1.1.0",
+    "cryptr": "^6.3.0",
+    "date-fns": "^3.6.0",
+    "dotenv": "^10.0.0",
+    "emailjs-imap-client": "^3.1.0",
+    "express": "^4.17.1",
+    "node-fetch": "^3.3.2",
+    "otpauth": "^9.3.1",
+    "pg": "^8.12.0",
+    "playwright": "^1.46.0",
+    "ws": "^7.4.5"
+  }
+}
