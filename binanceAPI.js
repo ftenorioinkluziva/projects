@@ -87,8 +87,6 @@ class BinanceAPI {
     return response.data;
   }
 
-
-
   async getAdDetails(adNum) {
     return this.makeRequest('POST', '/sapi/v1/c2c/ads/getDetailByNo', { adsNo: adNum });
   }
@@ -170,7 +168,6 @@ class BinanceAPI {
   
   }
   
-
   async getAdsList(page = 1, rows = 100) {
     return this.makeRequest('POST', '/sapi/v1/c2c/ads/listWithPagination', {}, { page, rows });
   }
@@ -191,12 +188,10 @@ class BinanceAPI {
     }
   }
   
-
   async updateAd(advNo, updates) {
     updates.advNo = advNo;
     return this.makeRequest('POST', '/sapi/v1/c2c/ads/update', {}, updates);
   }
-
       
   async topUpAdBalance(advNo, topUpAmount) {
     const adDetails = await this.getAdDetails(advNo);
